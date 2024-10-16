@@ -2,7 +2,7 @@
 //Q1 変数
 let nickname = 'ごっしー';
 let age = 28;
-console.log('私のニックネームは' +nickname+ 'です。年齢は' +age+ 'です。');
+console.log('私のニックネームは' + nickname + 'です。年齢は' + age + 'です。');
 
 //Q2 配列
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
@@ -40,7 +40,7 @@ console.log(playerList[1].favorites[1]);
 //Q5 四則演算
 let sum =0;
 for (let i =0; i < playerList.length; i++) {
-  sum+= playerList[i].age;
+  sum += playerList[i].age;
 }
 
 console.log(sum/ playerList.length);
@@ -78,7 +78,7 @@ let calc = {
   subtract : function subtract (){
     let x = 15;
     let y = 5;
-    console.log(x-y);
+    console.log(x - y);
   },
 
   multiply  : function multiply (){
@@ -90,7 +90,7 @@ let calc = {
   divide : function divide (){
     let x = 10;
     let y = 2;
-    console.log(x / 2);
+    console.log(x / y);
   }
 };
 
@@ -100,11 +100,11 @@ calc.multiply();
 calc.divide();
 
 //Q9 戻り値
-function surplus(x, y) {
-  let subtract = x % y;
-  return subtract;
+function remainder (x, y) {
+  let surplus = x % y;
+  return surplus;
 }
-console.log('5を3で割った余りは' + surplus(5, 3) + 'です。');
+console.log('5を3で割った余りは' + remainder (5, 3) + 'です。');
 
 //Q10 スコープ
 //A.JavaScriptでは、関数の中で定義した変数はその関数内でしか使用できないローカル変数という概念があり、Q10コードの変数xはfoo関数内で宣言されているためローカル変数という扱いになる。だが、Q10コードではfoo関数外つまり、変数xのスコープ(有効範囲)外で参照しようとしているが、xはローカル変数のため参照することができずエラーが出力される。
