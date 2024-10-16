@@ -40,7 +40,7 @@ console.log(playerList[1].favorites[1]);
 //Q5 四則演算
 let sum =0;
 for (let i =0; i < playerList.length; i++) {
-  sum += playerList[i].age;
+  sum += playerList[i].age; //sum = sum + playerList[i].ageと同じ意味！
 }
 
 console.log(sum/ playerList.length);
@@ -61,11 +61,11 @@ world();
 //Q7 メソッド
 user.birthday = '2000-09-27';
 
-user.method = function sayHello() {
+user.sayHello = function () {
   let hello = 'Hello!'
   console.log(hello);
 }
-user.method();
+user.sayHello();
 
 //Q8 引数
 let calc = {
@@ -112,7 +112,7 @@ console.log('5を3で割った余りは' + remainder (5, 3) + 'です。');
 
 //応用編
 //Q1 標準組み込みオブジェクト
-let random = Math.floor( Math.random() * 11); //floorメソッドは小数点以下を切り捨てる
+let random = Math.floor( Math.random() * 10); //floorメソッドは小数点以下を切り捨てる
 console.log(random);
 
 //Q2 コールバック関数
